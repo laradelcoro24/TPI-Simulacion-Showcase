@@ -1,58 +1,21 @@
-5.0
-5.0
-66.66666666666681
-5.0
-5.0
-5.0
-5.0
-66.66666666666687
-66.20689655172434
-67.60563380281711
-Salieron todos
-66.66666666666687
-Salieron todos
-66.20689655172434
-Salieron todos
-67.13286713286733
-Salieron todos
-65.75342465753444
-Salieron todos
-65.75342465753444
-Salieron todos
-66.20689655172434
-Salieron todos
-68.08510638297892
-Salieron todos
-68.08510638297892
-Salieron todos
-3.0
-bomberos
-3.0
-bomberos
-70.0
-bomberos
-73.0
-bomberos
-71.5
-bomberos
-72.25
-bomberos
-73.25
-bomberos
-70.75
-bomberos
-70.25
-bomberos
-71.75
-bomberos
-71.75
-bomberos
-72.25
-bomberos
-71.0
-bomberos
-71.0
-bomberos
-70.75
-bomberos
-70.75
+
+cantidad de personas afuera/tiempo  82.75862068965542
+cantidad de personas afuera/tiempo  82.75862068965542
+cantidad de personas afuera/tiempo  84.2105263157897
+cantidad de personas afuera/tiempo  83.47826086956546
+cantidad de personas afuera/tiempo  84.2105263157897
+cantidad de personas afuera/tiempo  84.95575221238963
+cantidad de personas afuera/tiempo  80.67226890756326
+cantidad de personas afuera/tiempo  82.05128205128229
+cantidad de personas afuera/tiempo  83.47826086956546
+cantidad de personas afuera/tiempo  79.75
+cantidad de personas afuera/tiempo  82.05128205128229
+cantidad de personas afuera/tiempo  80.67226890756326
+cantidad de personas afuera/tiempo  84.2105263157897
+cantidad de personas afuera/tiempo  83.47826086956546
+cantidad de personas afuera/tiempo  82.75862068965542
+cantidad de personas afuera/tiempo  80.67226890756326
+cantidad de personas afuera/tiempo  80.67226890756326
+cantidad de personas afuera/tiempo  79.5
+cantidad de personas afuera/tiempo  84.2105263157897
+tiempo 90% 5.199999999999991
