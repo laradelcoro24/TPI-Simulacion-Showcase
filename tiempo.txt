@@ -1,21 +1,11 @@
-
-cantidad de personas afuera/tiempo  82.75862068965542
-cantidad de personas afuera/tiempo  82.75862068965542
-cantidad de personas afuera/tiempo  84.2105263157897
-cantidad de personas afuera/tiempo  83.47826086956546
-cantidad de personas afuera/tiempo  84.2105263157897
-cantidad de personas afuera/tiempo  84.95575221238963
-cantidad de personas afuera/tiempo  80.67226890756326
-cantidad de personas afuera/tiempo  82.05128205128229
-cantidad de personas afuera/tiempo  83.47826086956546
-cantidad de personas afuera/tiempo  79.75
-cantidad de personas afuera/tiempo  82.05128205128229
-cantidad de personas afuera/tiempo  80.67226890756326
-cantidad de personas afuera/tiempo  84.2105263157897
-cantidad de personas afuera/tiempo  83.47826086956546
-cantidad de personas afuera/tiempo  82.75862068965542
-cantidad de personas afuera/tiempo  80.67226890756326
-cantidad de personas afuera/tiempo  80.67226890756326
-cantidad de personas afuera/tiempo  79.5
-cantidad de personas afuera/tiempo  84.2105263157897
-tiempo 90% 5.199999999999991
+83.47826086956546	3.133333333333325
+83.47826086956546	3.1999999999999913
+82.75862068965542	3.166666666666658
+82.75862068965542	3.1999999999999913
+82.75862068965542	3.033333333333325
+82.05128205128229	3.166666666666658
+84.95575221238963	3.0999999999999917
+81.35593220339007	3.166666666666658
+80.00000000000023	3.299999999999991
+79.75	3.1999999999999913
+83.47826086956546	3.1999999999999913

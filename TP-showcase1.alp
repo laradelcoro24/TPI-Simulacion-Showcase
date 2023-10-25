@@ -860,10 +860,8 @@
 fin=time();
 duracion=fin-inicio;
 //file.println(duracion);
-file.println("cantidad de personas afuera/tiempo  "+cantidadPersonasFuera/duracion);
-file.println("tiempo 90% "+tiempo90);
-if(SalieronTodos.isActive()==true){
-file.println("Salieron todos");}
+file.println(cantidadPersonasFuera/duracion+"\t"+tiempo90);
+
 ]]></Action>
 				</Event>
 				<Event>
@@ -898,9 +896,8 @@ file.println("Salieron todos");}
 					<Action><![CDATA[pauseSimulation();
 fin=time();
 duracion=fin-inicio;
-file.println("cantidad de personas afuera/tiempo  "+cantidadPersonasFuera/duracion);
-if(llegadaBomberos.isActive()==true){
-file.println("bomberos");}
+file.println(cantidadPersonasFuera/duracion+"\t"+tiempo90);
+
 ]]></Action>
 				</Event>
 				<Event>
@@ -969,32 +966,13 @@ inicio=time();
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 						</RecurrenceCode>
-						<Condition><![CDATA[(cantidadPersonasFuera==288);]]></Condition>
+						<Condition><![CDATA[(cantidadPersonasFuera>=288);]]></Condition>
 					</Properties>
-					<Action><![CDATA[tiempo90 = time();
+					<Action><![CDATA[tiempo90 = time()-inicio;
 ]]></Action>
 					<Logging>false</Logging>
 				</Event>
 			</Events>
-			<DynamicEvents>
-				<DynamicEventClass>
-					<Id>1698099065709</Id>
-					<Name><![CDATA[MyDynamicEvent]]></Name>
-					<X>230</X><Y>1980</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Parameter>
-						<Name><![CDATA[cantidadPersonasFuera]]></Name>
-						<Type><![CDATA[int]]></Type>
-					</Parameter>
-					<Action><![CDATA[if(cantidadPersonasFuera==288){
-pauseSimulation();
-tiempo90 = time();
-runSimulation();}]]></Action>
-				</DynamicEventClass>
-			</DynamicEvents>
 			<Functions>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>VOID</ReturnModificator>
@@ -1088,37 +1066,15 @@ panelGroup.setPos( vista.getX(), vista.getY() );]]></Body>
 					<VerticalAxisExpression><![CDATA[pedFlowStatistics3.countPeds()]]></VerticalAxisExpression>
 					<SamplesToKeep>100000</SamplesToKeep>
 				</DataSet>
-    			<DataSet>
-					<Id>1698097386960</Id>
-					<Name><![CDATA[dataset]]></Name>
-					<X>240</X><Y>1670</Y>
-					<Label><X>15</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>false</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1698134400000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
-					</RecurrenceCode>
-					<FreezeXAxis>false</FreezeXAxis>
-					<SamplesToKeep>100</SamplesToKeep>
-				</DataSet>
 			</AnalysisData>
 			<Connectivity>
 				<TextFile>
 					<Id>1696362180673</Id>
 					<Name><![CDATA[file]]></Name>
-					<X>115</X><Y>1630</Y>
+					<X>30</X><Y>1630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
+					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<FileType>FILE</FileType>
 					<Url><![CDATA[]]></Url>
@@ -1131,22 +1087,6 @@ panelGroup.setPos( vista.getX(), vista.getY() );]]></Body>
 					<Separators>
 </Separators>
 				</TextFile>
-				<ExcelFile>
-					<Id>1696368443580</Id>
-					<Name><![CDATA[excelFile]]></Name>
-					<X>25</X><Y>1630</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ResourceReference>
-						<PackageName><![CDATA[tp]]></PackageName>
-						<ClassName><![CDATA[de.xlsx]]></ClassName>
-					</ResourceReference>
-					<SaveInSnapshot>false</SaveInSnapshot>
-					<LoadOnStartup>true</LoadOnStartup>
-					<SaveOnDispose>true</SaveOnDispose>
-				</ExcelFile>
 			</Connectivity>
 			<AgentLinks>
 				<AgentLink>
@@ -2162,7 +2102,7 @@ panelGroup.setPos( vista.getX(), vista.getY() );]]></Body>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[cantidadPersonasFuera += 1]]></Code>
+								<Code><![CDATA[cantidadPersonasFuera += 1;]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -2741,7 +2681,7 @@ panelGroup.setPos( vista.getX(), vista.getY() );]]></Body>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[cantidadPersonasFuera += 1]]></Code>
+								<Code><![CDATA[cantidadPersonasFuera += 1;]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -3320,7 +3260,7 @@ panelGroup.setPos( vista.getX(), vista.getY() );]]></Body>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[cantidadPersonasFuera += 1]]></Code>
+								<Code><![CDATA[cantidadPersonasFuera += 1;]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -15134,30 +15074,52 @@ root.setParametersToDefaultValues();
 // root.parameter = 123;
 // ...
 // Prepare Engine for simulation:
-
 engine.start( root );
 // Start simulation in fast mode:
 engine.runFast();
 // TODO Process results of simulation here
-traceln( "dataset:", root.inicio );
-// traceln( root.dataset );
-// traceln( "pedSource:" );
-// traceln( inspectOf( root.pedSource ) );
-// ...
-// Destroy the model:
+traceln( "Finished, result = "+ root.tiempo90);
 engine.stop();
 
 
+
+
+
+]]></Code>
+		</CustomExperiment>
+		<!--   =========  Custom Experiment   ========  -->
+		<CustomExperiment>
+			<Id>1698248062282</Id>
+			<Name><![CDATA[CustomExperiment1]]></Name>
+			<MaximumMemory>512</MaximumMemory>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<Code><![CDATA[// Create Engine, initialize random number generator:
+Engine engine = createEngine();
+engine.setTimeUnit( MINUTE );
+// Fixed seed (reproducible simulation runs)
+engine.getDefaultRandomGenerator().setSeed( 1 );
+engine.setStartTime( 0.0 );
+engine.setStartDate( toDate( 2023, AUGUST, 16, 0, 0, 0 ) );
+// Set stop time:
+engine.setStopTime( 100 );
+// Create new root object:
+Main root = new Main( engine, null, null );
+// TODO Setup parameters of root object here
+root.setParametersToDefaultValues();
+// ...
+// Prepare Engine for simulation:
+engine.start( root );
+// Start simulation in fast mode:
 engine.runFast();
 // TODO Process results of simulation here
-traceln( "dataset:", root.inicio );
-// traceln( root.dataset );
+// traceln( "salidaPpal:" );
+// traceln( root.salidaPpal );
 // traceln( "pedSource:" );
 // traceln( inspectOf( root.pedSource ) );
 // ...
 // Destroy the model:
-engine.stop();
-]]></Code>
+engine.stop();]]></Code>
 		</CustomExperiment>
 	</Experiments>
 	<ModelResources>
@@ -15183,10 +15145,6 @@ engine.stop();
 		</Resource>
 		<Resource>
 			<Path><![CDATA[tiempo.txt]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-		</Resource>
-		<Resource>
-			<Path><![CDATA[de.xlsx]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 		</Resource>
 	</ModelResources>
