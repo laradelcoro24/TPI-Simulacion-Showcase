@@ -2790,6 +2790,9 @@ panelGroup.setPos( vista.getX(), vista.getY() );]]></Body>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[cantidadPersonasSalidaEst +=1 ;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onCancel]]></Name>
@@ -3369,6 +3372,9 @@ panelGroup.setPos( vista.getX(), vista.getY() );]]></Body>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[cantidadPersonasSalidaEst +=1 ;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onCancel]]></Name>
@@ -30977,7 +30983,7 @@ EMERGENCIA
 	</RunConfiguration>
 	<Experiments>	
 		<!--   =========   Simulation Experiment   ========  -->
-		<SimulationExperiment ActiveObjectClassId="1698255967249">
+		<SimulationExperiment ActiveObjectClassId="1692148517492">
 			<Id>1692148517548</Id>
 			<Name><![CDATA[Simulation]]></Name>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
